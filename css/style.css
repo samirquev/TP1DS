@@ -1,0 +1,172 @@
+/* FUENTE Y FONDO */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h2 {
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: #34495e;
+}
+
+.nav a:hover {
+    background-color: #1abc9c;
+}
+
+/* SECCIONES */
+section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ARTICULOS */
+article {
+    margin-bottom: 15px;
+}
+
+/* PRESENTACION (imagen + descripcion) */
+.presentacion {
+    width: 100%;
+    text-align: center;
+}
+
+.presentacion .secdescripcion {
+    margin-top: 15px;
+}
+
+/* TEXTO */
+.secdescripcion {
+    line-height: 1.5;
+}
+
+.lista_hab_herr li {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.seccion-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion-link a:hover {
+    color: #1abc9c;
+}
+
+/* FORMULARIO */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+/* FLEXBOX BASE */
+main.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    main.contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 45%;
+    }
+
+    .presentacion {
+        width: 100%;
+    }
+}
+
+/* A CONTINUACION CONFIGURACIONES PARA EL MODO OSCURO */
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .contenedor {
+    background-color: #1e1e1e;
+}
+
+.dark section {
+    background-color: #2a2a2a;
+}
+
+.dark .nav {
+    background-color: #1e1e1e;
+}
+
+.dark .nav a {
+    background-color: #333;
+}
+
+.dark .nav a:hover {
+    background-color: #555;
+}
+
+.dark button {
+    background-color: #333;
+}
+
+.dark button:hover {
+    background-color: #555;
+}
