@@ -2,26 +2,45 @@
 <html>
 <head>
     <meta charset="utf-8">
+
     <title>Proyectos</title>
+
     <link rel="stylesheet" href="../CSS/style.css">
+
     <link rel="icon" href="../img/Portafolio.png">
+
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 
+
 <body>
+    <nav class="nav">
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="redes.html">Redes Sociales</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
 
-<nav class="nav">
-    <a href="index.html">Inicio</a>
-    <a href="habilidades.html">Habilidades</a>
-    <a href="experiencia.html">Experiencia</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="redes.html">Redes Sociales</a>
-    <a href="contacto.html">Contacto</a>
+        <div class="toggle-container">
+            <span id="iconSun">☀</span>
 
-</nav>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
 
-<main class="contenedor">
+            <span id="iconMoon">🌙</span>
+        </div>
 
-    <section id="proyectos" class="proyectos">
+    </nav>
+
+    <main class="contenedor">
+        <section id="proyectos" class="proyectos">
             <h2>Proyectos</h2>
 
             <article>
@@ -35,9 +54,16 @@
                 <p> Desarrollo de una plataforma de e-commerce con carrito de compras, 
                 listado de productos y diseño responsive adaptable a dispositivos móviles.</p>
             </article>
-        </section>
 
-</main>
+        </section>
+    </main>
+
+    <footer class="contenedor">
+        <p>© 2026 - Portafolio web - Martinez Lucas</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 
 </body>
+
 </html>

@@ -2,44 +2,72 @@
 <html>
 <head>
     <meta charset="utf-8">
+
     <title>Contacto</title>
+
     <link rel="stylesheet" href="../CSS/style.css">
+
     <link rel="icon" href="../img/Portafolio.png">
+
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 
-<nav class="nav">
-    <a href="index.html">Inicio</a>
-    <a href="habilidades.html">Habilidades</a>
-    <a href="experiencia.html">Experiencia</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="redes.html">Redes Sociales</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
+    <nav class="nav">
 
-<main class="contenedor">
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="redes.html">Redes Sociales</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
 
-   <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
+        <div class="toggle-container">
+            <span id="iconSun">☀</span>
 
-            <form action="https://formspree.io/f/mgonglow" method="POST">
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
 
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+            <span id="iconMoon">🌙</span>
+        </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+    </nav>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+    <main class="contenedor">
 
-                <button type="submit">Enviar</button>
+        <section id="contacto" class="contacto">
+                <h2>Contacto</h2>
 
-            </form>
+                <form action="https://formspree.io/f/mgonglow" method="POST">
+
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
         </section>
+    </main>
 
-</main>
+    <footer class="contenedor">
+        <p>© 2026 - Portafolio web - Martinez Lucas</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 
 </body>
+
+
 </html>

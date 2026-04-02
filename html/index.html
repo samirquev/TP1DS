@@ -16,31 +16,40 @@
 <body>
 
     <nav class="nav">
-        <a href="index.html">Inicio</a>
-        <a href="habilidades.html">Habilidades</a>
-        <a href="experiencia.html">Experiencia</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="redes.html">Redes Sociales</a>
-        <a href="contacto.html">Contacto</a>
-        
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="redes.html">Redes Sociales</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="toggle-container">
+            <span id="iconSun">☀</span>
+
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+
+            <span id="iconMoon">🌙</span>
+        </div>
 
     </nav>
 
-    <header class="contenedor">
-        <h1> LUCAS MARTINEZ </h1>
-        <h2>Desarrollador Web Frontend</h2>
-
-        <!-- Botón dark mode -->
-        <button onclick="toggleDarkMode()">🌙 Modo oscuro</button>
-
-    </header>
-
     <main class="contenedor">
+
+        <!-- HEADER ADENTRO PARA QUE TODO QUEDE UNIFORME-->
+        <header>
+            <h1>Lucas Martínez</h1>
+            <h2>Desarrollador Web Frontend</h2>
+        </header>
 
         <section class="presentacion">
 
             <div class="fotopres">
-                <img src="../img/desarrollador.png" alt="Foto desarrollador" width="300">
+                <img src="../img/desarrollador.png" alt="Foto del desarrollador" width="300">
             </div>
 
             <div class="secdescripcion">
@@ -50,6 +59,24 @@
                     Actualmente busco seguir creciendo profesionalmente y participar en proyectos desafiantes.
                 </p>
 
+                <h2>Trayectoria</h2>
+
+                <p>
+                    Inicié mi formación en el ámbito tecnológico en el
+                    <a href="https://www.ipet50.edu.ar/" target="_blank">
+                        IPET 50 Ing. Emilio F. Olmos
+                    </a>,
+                    donde adquirí bases en programación y lógica computacional.
+                </p>
+
+                <p>
+                    Posteriormente, continué mis estudios en la 
+                    <a href="https://sanfrancisco.utn.edu.ar/" target="_blank">
+                        Universidad Tecnológica Nacional - Facultad Regional San Francisco
+                    </a>,
+                    donde profundicé conocimientos en desarrollo web, estructuras de datos y sistemas informáticos.
+                </p>
+
             </div>
 
         </section>
@@ -57,16 +84,10 @@
     </main>
 
     <footer class="contenedor">
-        <p>© 2026 - Portafolio - Martinez Lucas</p>
+        <p>© 2026 - Portafolio web - Martinez Lucas</p>
     </footer>
 
-    <!-- SCRIPT MODO OSCURO -->
-
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark");
-        }
-    </script>
+    <script src="../js/script.js"></script>
 
 </body>
 </html>

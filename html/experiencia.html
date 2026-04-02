@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <meta charset="utf-8">
+
     <title>Experiencia</title>
+
     <link rel="stylesheet" href="../CSS/style.css">
+
     <link rel="icon" href="../img/Portafolio.png">
+
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 
-<nav class="nav">
-   <a href="index.html">Inicio</a>
-    <a href="habilidades.html">Habilidades</a>
-    <a href="experiencia.html">Experiencia</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="redes.html">Redes Sociales</a>
-    <a href="contacto.html">Contacto</a>
+    <nav class="nav">
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="redes.html">Redes Sociales</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
 
-</nav>
+        <div class="toggle-container">
+            <span id="iconSun">☀</span>
 
-<main class="contenedor">
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
 
-    <section id="experiencia" class="experiencia">
+            <span id="iconMoon">🌙</span>
+        </div>
+
+    </nav>
+
+    <main class="contenedor">
+
+        <section id="experiencia" class="experiencia">
             <h2>Experiencia</h2>
 
             <article>
                 <h3>Desarrollador Frontend - TechSolutions</h3>
                 <p>2023 - 2025</p>
                 <p> Desarrollo de interfaces web responsivas utilizando HTML, CSS y JavaScript. 
-                    Participación en proyectos colaborativos y mejora de la experiencia de usuario.</p>
+                    Participación en proyectos colaborativos y mejora de la experiencia de usuario.
+                </p>
             </article>
 
             <article>
@@ -37,10 +60,17 @@
                 <p>Mantenimiento de sitios web, corrección de errores y desarrollo de nuevas funcionalidades.
                 Trabajo en equipo bajo metodologías ágiles.</p>
             </article>
-
         </section>
+    </main>
 
-</main>
+    <footer class="contenedor">
+        <p>© 2026 - Portafolio web - Martinez Lucas</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 
 </body>
+
+
+
 </html>
