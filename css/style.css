@@ -260,12 +260,40 @@ main.contenedor {
 .icon-sun {
     opacity: 0.5;
 }
+/* NAV EN CELULAR */
+@media (max-width: 768px) {
+    
+    .nav {
+        flex-direction: column; /* pasa a vertical */
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+    }
 
 .dark .icon-moon {
     opacity: 0.5;
 }
+    .nav div:first-child {
+        display: flex;
+        flex-wrap: wrap; /* permite que bajen */
+        justify-content: center;
+        gap: 10px;
+    }
 
 .dark .icon-sun {
     opacity: 1;
 }
+    .nav a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
 
+    /* switch abajo centrado */
+    .toggle-container {
+        position: static; /* quita el absoluto */
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
